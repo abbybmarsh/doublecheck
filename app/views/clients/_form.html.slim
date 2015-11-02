@@ -1,0 +1,25 @@
+.row
+  .col-md-4
+    = form_for @client do |f|
+ 
+      - if @client.errors.any?
+        #error_explanation.bg-warning
+          p
+            = pluralize(@client.errors.count, "error") 
+            | prohibited this client from being saved:
+      
+          ul
+            - @client.errors.full_messages.each do |msg|
+              li = msg
+      .form-group
+        = f.label :client_name
+        br
+        = f.text_field :name, class: 'form-control'
+  
+      .form-group
+        = f.label :upload_logo
+        br
+        = f.text_field :logo, class: 'form-control'
+  
+      .form-group
+        button.btn.btn-default type="submit" Submit

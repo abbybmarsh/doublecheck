@@ -1,0 +1,6 @@
+tr
+  td = user.name
+  td = user.email
+  td = link_to '', [user.client, user], :class => 'glyphicon glyphicon-trash',
+            method: :delete,
+            data: { confirm: 'Are you sure?' }

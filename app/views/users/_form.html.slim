@@ -1,0 +1,20 @@
+.row
+  .col-md-4
+    = form_for([@client, @client.users.build]) do |f| 
+      .form-group
+        = f.label :user_name 
+        br
+        = f.text_field :name, class: 'form-control'
+  
+      .form-group
+        = f.label :email
+        br
+        = f.text_field :email, class: 'form-control'
+      
+      .form-group
+        = f.label :reports
+        br
+        = select_tag "reporting_list", options_from_collection_for_select(Report.all, 'id', 'name',@user.reports.map{ |j| j.id }), :multiple => true
+  
+      .form-group
+        button.btn.btn-default type="submit" Submit

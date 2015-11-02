@@ -1,0 +1,29 @@
+h2 Your Clients
+
+= link_to 'New Clients', new_client_path, :class => 'btn btn-primary'
+
+br
+br
+.row
+  .col-md-12
+    table.table.table-striped
+      thead
+        tr
+          th Clients
+          th Reports
+          th Users
+          th Last Updated
+          th Edit
+          th Delete
+      
+      tbody
+        - @clients.each do |client|
+          tr
+            td = link_to client.name, client_path(client)
+            td = client.reports.size
+            td = client.users.size
+            td mmm dd, yyyy hh:mmPM
+            td = link_to '', edit_client_path(client), :class => 'glyphicon glyphicon-edit'
+            td = link_to '', client_path(client), :class => 'glyphicon glyphicon-trash',
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' }

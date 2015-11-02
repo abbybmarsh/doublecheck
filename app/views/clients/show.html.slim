@@ -1,0 +1,38 @@
+h2 = @client.name
+ 
+p = @client.logo
+
+p
+  = link_to 'Edit', edit_client_path(@client), :class => 'btn btn-default'
+  = link_to 'Back', clients_path, :class => 'btn btn-default'
+br
+
+h4 Reports
+table.table.table-striped
+  thead
+    tr 
+      th Report Title:
+      th Report Body:
+      th Delete
+  tbody
+    = render @client.reports
+br
+br
+
+h4 Users
+table.table.table-striped
+  thead
+    tr 
+      th User Name:
+      th Email:
+      th Delete
+    tbody 
+      = render @client.users
+  
+
+
+h2 Add a report
+= render 'reports/form'
+
+h2 Add a user
+= render 'users/form'
