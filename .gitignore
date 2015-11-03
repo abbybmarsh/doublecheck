@@ -1,0 +1,14 @@
+/log/*
+!/log/.keep
+/tmp
+.idea
+.rspec
+.DS_Store
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+test.png
+config/database.yml
+coverage
+.env
