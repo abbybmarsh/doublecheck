@@ -1,6 +1,7 @@
 tr
   td = report.commenter
   td = report.body
+  td = link_to '', '', :class => 'glyphicon glyphicon-edit'
   td 
     = link_to '', [report.client, report], :class => 'glyphicon glyphicon-trash',
         method: :delete,

@@ -1,6 +1,14 @@
 class ReportsController < ApplicationController
   
-  http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+  # http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+  def index
+    @reports = Report.all
+  end
+  
+  def new
+    @client = Client.find(params[:client_id])
+    @report = Report.new
+  end
   
   def create
     @client = Client.find(params[:client_id])

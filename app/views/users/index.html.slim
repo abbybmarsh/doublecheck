@@ -1,4 +1,4 @@
-h2 Reports
+h2 Users
   
 table.table.table-striped
   thead
@@ -8,9 +8,9 @@ table.table.table-striped
       th Edit
       th Delete
   tbody
-  - @reports.each do |report|
+  - @users.each do |user|
     tr
-      td = report.commenter
-      td = report.body
+      td = user.name
+      td = user.email
       td edit
       td delete

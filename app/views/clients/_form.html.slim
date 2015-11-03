@@ -20,6 +20,11 @@
         = f.label :upload_logo
         br
         = f.text_field :logo, class: 'form-control'
+      
+      .form-group  
+        = f.label :attachment
+        br
+        = f.file_field :attachment, class: 'form-control'
   
       .form-group
         button.btn.btn-default type="submit" Submit

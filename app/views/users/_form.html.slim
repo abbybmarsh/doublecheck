@@ -10,11 +10,6 @@
         = f.label :email
         br
         = f.text_field :email, class: 'form-control'
-      
-      .form-group
-        = f.label :reports
-        br
-        = select_tag "reporting_list", options_from_collection_for_select(Report.all, 'id', 'name',@user.reports.map{ |j| j.id }), :multiple => true
   
       .form-group
         button.btn.btn-default type="submit" Submit

@@ -20,9 +20,9 @@ br
         - @clients.each do |client|
           tr
             td = link_to client.name, client_path(client)
-            td = client.reports.size
-            td = client.users.size
-            td mmm dd, yyyy hh:mmPM
+            td = link_to client.reports.size, client_reports_path(client)
+            td = link_to client.users.size, client_users_path(client)
+            td = client.updated_at
             td = link_to '', edit_client_path(client), :class => 'glyphicon glyphicon-edit'
             td = link_to '', client_path(client), :class => 'glyphicon glyphicon-trash',
                   method: :delete,

@@ -1,6 +1,6 @@
 class ClientsController < ApplicationController
   
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
   
   def index
     @clients = Client.all
@@ -44,9 +44,16 @@ class ClientsController < ApplicationController
  
     redirect_to clients_path
   end
+  
+  def upload
+    uploaded_io = params[:client][:attachment]
+    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'w') do |file|
+    file.write(uploaded_io.read)
+    end
+  end
  
   private
     def client_params
-      params.require(:client).permit(:name, :logo)
+      params.require(:client).permit(:name, :logo, :attachment)
     end
 end

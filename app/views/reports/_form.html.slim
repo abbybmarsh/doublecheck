@@ -2,7 +2,7 @@
   .col-md-4
     = form_for([@client, @client.reports.build]) do |f| 
       .form-group
-        = f.label :commenter 
+        = f.label :title 
         br
         = f.text_field :commenter, class: 'form-control'
   

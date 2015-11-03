@@ -7,12 +7,14 @@ p
   = link_to 'Back', clients_path, :class => 'btn btn-default'
 br
 
-h4 Reports
+h4 Reports hello
+p = link_to 'New Reports', new_client_report_path(@client), :class => 'btn btn-primary'
 table.table.table-striped
   thead
     tr 
       th Report Title:
       th Report Body:
+      th Edit
       th Delete
   tbody
     = render @client.reports
@@ -20,19 +22,20 @@ br
 br
 
 h4 Users
+p = link_to 'New Users', new_client_user_path(@client), :class => 'btn btn-primary'
 table.table.table-striped
   thead
     tr 
       th User Name:
       th Email:
+      th Edit
       th Delete
     tbody 
       = render @client.users
   
 
 
-h2 Add a report
-= render 'reports/form'
-
-h2 Add a user
-= render 'users/form'
+/ = render 'reports/form'
+/
+/ h2 Add a user
+/ = render 'users/form'

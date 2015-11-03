@@ -1,6 +1,15 @@
 class UsersController < ApplicationController
   
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  
+  def index
+    @users = User.all
+  end
+  
+  def new
+    @client = Client.find(params[:client_id])
+    @user = User.new
+  end
   
   def create
     @client = Client.find(params[:client_id])
