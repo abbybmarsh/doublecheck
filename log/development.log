@@ -19696,3 +19696,376 @@ Processing by ClientsController#show as HTML
   Rendered collection (0.0ms)
   Rendered clients/show.html.slim within layouts/application (2.4ms)
 Completed 200 OK in 192ms (Views: 191.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:40:00 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered clients/show.html.slim within layouts/application (2.0ms)
+Completed 200 OK in 192ms (Views: 191.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/reports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/application.self-3e324f772bad20b408aa9fd0d7a95a9a68ed9db1c24b36dd8bbe07def212451f.css?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/clients.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/reports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-03 11:40:01 -0500
+
+
+Started GET "/clients/5/reports/new" for ::1 at 2015-11-03 11:40:04 -0500
+Processing by ReportsController#new as HTML
+  Parameters: {"client_id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered reports/_form.html.slim (2.0ms)
+  Rendered reports/new.html.slim within layouts/application (3.4ms)
+Completed 200 OK in 189ms (Views: 188.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clients/5/reports" for ::1 at 2015-11-03 11:40:15 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p7PNGWpJctkHu0ZoHSvHF07ztxXd6JRzxQlyAWlls+U9XPVezbhnHL/aWHVidoibzaINNt8heA9XToRdBMYCTw==", "report"=>{"commenter"=>"Demandware 2014", "body"=>"This is the 2014 report"}, "client_id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reports" ("commenter", "body", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "Demandware 2014"], ["body", "This is the 2014 report"], ["client_id", 5], ["created_at", "2015-11-03 16:40:15.694214"], ["updated_at", "2015-11-03 16:40:15.694214"]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 14ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:40:15 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered clients/show.html.slim within layouts/application (4.2ms)
+Completed 200 OK in 184ms (Views: 182.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-03 11:40:15 -0500
+
+
+Started GET "/clients/5/reports/new" for ::1 at 2015-11-03 11:40:17 -0500
+Processing by ReportsController#new as HTML
+  Parameters: {"client_id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered reports/_form.html.slim (2.1ms)
+  Rendered reports/new.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 186ms (Views: 184.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clients/5/reports" for ::1 at 2015-11-03 11:40:38 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1es6WwQX3uk0SNyble9YvPswJh6TNZOyFrBbbbBVUydPBAIco+bLLIwpwobqshcweGGcPZH8f86E960x3fbijQ==", "report"=>{"commenter"=>"Demandware 2013", "body"=>"This is the 2013 report"}, "client_id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reports" ("commenter", "body", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "Demandware 2013"], ["body", "This is the 2013 report"], ["client_id", 5], ["created_at", "2015-11-03 16:40:38.341690"], ["updated_at", "2015-11-03 16:40:38.341690"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 9ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:40:38 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered clients/show.html.slim within layouts/application (4.2ms)
+Completed 200 OK in 183ms (Views: 181.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/5/users/new" for ::1 at 2015-11-03 11:45:05 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"client_id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.slim (2.2ms)
+  Rendered users/new.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 193ms (Views: 192.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clients/5/users" for ::1 at 2015-11-03 11:45:23 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U9gAo8nGD7jU3+DyMY0FTH6NbUtLJbvajdDDPozThUXJNzjkbjcafWy+/u9O0ErA/dzXaEnsV6YflzVi4XA07w==", "user"=>{"name"=>"Sansa Stark", "email"=>"sansa@test.com"}, "client_id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Sansa Stark"], ["email", "sansa@test.com"], ["client_id", 5], ["created_at", "2015-11-03 16:45:23.659631"], ["updated_at", "2015-11-03 16:45:23.659631"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 10ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:45:23 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.2ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered users/_user.html.slim (0.3ms)
+  Rendered clients/show.html.slim within layouts/application (7.4ms)
+Completed 200 OK in 185ms (Views: 184.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clients" for ::1 at 2015-11-03 11:45:26 -0500
+Processing by ClientsController#index as HTML
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered clients/index.html.slim within layouts/application (6.7ms)
+Completed 200 OK in 187ms (Views: 186.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:45:29 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered users/_user.html.slim (0.3ms)
+  Rendered clients/show.html.slim within layouts/application (6.3ms)
+Completed 200 OK in 187ms (Views: 186.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/5/reports/new" for ::1 at 2015-11-03 11:45:32 -0500
+Processing by ReportsController#new as HTML
+  Parameters: {"client_id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered reports/_form.html.slim (2.0ms)
+  Rendered reports/new.html.slim within layouts/application (3.4ms)
+Completed 200 OK in 178ms (Views: 176.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clients/5/reports" for ::1 at 2015-11-03 11:45:44 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tn2sl0I+cYIwsZLadWU9wZRANcUsd1jFoKn0sTQVf0sskpTQ5c9kR4jQjMcKOHJNFxGP5i6+tLky7gLtWbbO4Q==", "report"=>{"commenter"=>"Demandware 2012", "body"=>"This is the 2012 report"}, "client_id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reports" ("commenter", "body", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "Demandware 2012"], ["body", "This is the 2012 report"], ["client_id", 5], ["created_at", "2015-11-03 16:45:44.467297"], ["updated_at", "2015-11-03 16:45:44.467297"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 13ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:45:44 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered users/_user.html.slim (0.3ms)
+  Rendered clients/show.html.slim within layouts/application (6.3ms)
+Completed 200 OK in 182ms (Views: 180.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients" for ::1 at 2015-11-03 11:45:49 -0500
+Processing by ClientsController#index as HTML
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered clients/index.html.slim within layouts/application (6.9ms)
+Completed 200 OK in 195ms (Views: 194.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:45:51 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered users/_user.html.slim (0.3ms)
+  Rendered clients/show.html.slim within layouts/application (5.9ms)
+Completed 200 OK in 178ms (Views: 176.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/clients/5/users/8" for ::1 at 2015-11-03 11:45:55 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"N0ihXcva6n//bxKSKM1qVmvFOT0zz4Tm3Y6pnMiDVkitp5kabCv/ukcODI9XkCXa6JSDHjEGaJpPyV/ApSDn4g==", "client_id"=>"5", "id"=>"8"}
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."client_id" = ? AND "users"."id" = ? LIMIT 1  [["client_id", 5], ["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 8]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 16ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/clients/5" for ::1 at 2015-11-03 11:45:55 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered reports/_report.html.slim (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered clients/show.html.slim within layouts/application (4.6ms)
+Completed 200 OK in 182ms (Views: 180.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients" for ::1 at 2015-11-03 11:45:57 -0500
+Processing by ClientsController#index as HTML
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 5]]
+  Rendered clients/index.html.slim within layouts/application (6.6ms)
+Completed 200 OK in 180ms (Views: 179.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/clients/3/users" for ::1 at 2015-11-03 11:46:01 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"client_id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 186ms (Views: 185.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/3" for ::1 at 2015-11-03 11:46:10 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mReport Load (0.1ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 3]]
+  Rendered reports/_report.html.slim (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 3]]
+  Rendered users/_user.html.slim (0.3ms)
+  Rendered clients/show.html.slim within layouts/application (5.9ms)
+Completed 200 OK in 187ms (Views: 185.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/3/users/new" for ::1 at 2015-11-03 11:46:13 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"client_id"=>"3"}
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/_form.html.slim (2.0ms)
+  Rendered users/new.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 185ms (Views: 183.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clients/3/users" for ::1 at 2015-11-03 11:46:22 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K/dW74OrHIC3RppW/wzC3VOyjKyltST9BluOfwm5TgCxGG6oJFoJRQ8nhEuAUY1R0OM2j6d8yIGUHHgjZBr/qg==", "user"=>{"name"=>"Sansa Stark", "email"=>"sansa@test.com"}, "client_id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "client_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sansa Stark"], ["email", "sansa@test.com"], ["client_id", 3], ["created_at", "2015-11-03 16:46:22.909691"], ["updated_at", "2015-11-03 16:46:22.909691"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/clients/3
+Completed 302 Found in 9ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/clients/3" for ::1 at 2015-11-03 11:46:22 -0500
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mReport Load (0.1ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."client_id" = ?  [["client_id", 3]]
+  Rendered reports/_report.html.slim (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."client_id" = ?[0m  [["client_id", 3]]
+  Rendered users/_user.html.slim (0.5ms)
+  Rendered clients/show.html.slim within layouts/application (6.0ms)
+Completed 200 OK in 198ms (Views: 197.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients" for ::1 at 2015-11-03 11:46:25 -0500
+Processing by ClientsController#index as HTML
+  [1m[35mClient Load (0.2ms)[0m  SELECT "clients".* FROM "clients"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?  [["client_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?  [["client_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reports" WHERE "reports"."client_id" = ?[0m  [["client_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."client_id" = ?  [["client_id", 5]]
+  Rendered clients/index.html.slim within layouts/application (6.4ms)
+Completed 200 OK in 190ms (Views: 188.5ms | ActiveRecord: 0.6ms)
